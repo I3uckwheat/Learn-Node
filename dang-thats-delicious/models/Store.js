@@ -23,7 +23,7 @@ const storeSchema = new mongoose.Schema({
       type: String,
       default: 'Point'
     },
-    coordnates: [{
+    coordinates: [{
       type: Number,
       required: "You must supply coordnates"
     }],
