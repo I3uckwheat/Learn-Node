@@ -22,6 +22,10 @@ const userSchema = new Schema({
   }
 });
 
+userSchema.virtual('gravatar').get(() => {
+  
+})
+
 userSchema.plugin(passportLocalMongoose, {usernameField: 'email'});
 userSchema.plugin(mongodbErrorHandler);
 
